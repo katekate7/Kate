@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+  
+    <div id="background">
+        <canvas id="stars"></canvas>
+        <div id="menuandslider">
+           <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <button class="share-button">
+
+                <i class="fas fa-share"></i> Share</button>
+
+              <button id='button'>Change <br> background color</button> 
+              <div class="slider">
+                          <input type="range" min="0.5" max="15" value="2" step="0.5">
+                          Change Speed of the Background: <span id="speed"></span>
+                      </div>
+
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+
+             
+            </div> 
+          </div>
+            
+
+          
+        
+  
+  </div>
+</div>
+
+<div id="paint">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+            <button onClick="undo_last()" type="button" class="button">Undo</button>
+            <button onClick="clear_canvas()" type="button" class="button">Clear</button>
+
+           <!--<div class="color-field" style="background: red;"></div>
+            <div class="color-field" style="background: blue;"></div>
+            <div class="color-field" style="background: green;"></div>
+            <div class="color-field" style="background:yellow;"></div> !-->
+
+            <input onInput="draw_color = this.value" type="color" 
+            class="color-picker">
+            <input type="range" min="1" max="100" class="pen-range"
+                   onInput="draw_width = this.value">
+        </div>
+</div>
+    
+
+
+    <script src="script.js" type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=YOUR-PROFILE-ID"></script>
+</body>
+
+</html>

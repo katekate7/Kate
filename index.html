@@ -10,8 +10,6 @@
 </head>
 
 <body>
-    
-  
     <div id="background">
         <canvas id="stars"></canvas>
         <div id="menuandslider">
@@ -27,19 +25,8 @@
                           <input type="range" min="0.5" max="15" value="2" step="0.5">
                           Change Speed of the Background: <span id="speed"></span>
                       </div>
-
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-
-             
             </div> 
           </div>
-            
-
-          
-        
-  
   </div>
 </div>
 
@@ -49,21 +36,16 @@
             <button onClick="undo_last()" type="button" class="button">Undo</button>
             <button onClick="clear_canvas()" type="button" class="button">Clear</button>
 
-           <!--<div class="color-field" style="background: red;"></div>
-            <div class="color-field" style="background: blue;"></div>
-            <div class="color-field" style="background: green;"></div>
-            <div class="color-field" style="background:yellow;"></div> !-->
-
+        
             <input onInput="draw_color = this.value" type="color" 
             class="color-picker">
-            <input type="range" min="1" max="100" class="pen-range"
-                   onInput="draw_width = this.value">
+            <input type="range" min="1" max="10" value="5" class="pen-range" oninput="changeLineWidth()"/>
         </div>
 </div>
     
 
 
-    <script src="script.js" type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=YOUR-PROFILE-ID"></script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
